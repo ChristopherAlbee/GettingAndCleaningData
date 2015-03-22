@@ -59,6 +59,20 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
     <br/>&gt; run()
 </ul>
 
+#### run_analysis.R process
+
+Once I had extracted these variables from both the Train and Test files, I unioned them together to form a single, large data set of observation data. This fulfills Steps 1 and 2.
+
+Renaming the fields as I described above fulfills Step 4.
+
+I used activity_labels.txt as a lookup table to assign descriptive activity names to the activities, which fulfills Step 3.
+
+I also unioned together the Subject ids from both the Train and Test data sets, as well as the Activity ids. I concatenated these to the observations to form a combined data set.
+
+To fulfill Step 5, I transformed the combined data set using ddply to obtain the average or mean value for each measurement, for each group consisting of the Subject and Activity.
+
+The R code in run_analysis.R is commented, and each Step is identified where it is fulfilled.
+
 #### Acknowledgements
 
 - Cotton, Richard (2013-09-09). Learning R . O'Reilly Media. Kindle Edition. 
