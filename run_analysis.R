@@ -1,6 +1,5 @@
 
 run <- function() {
-    ## -------------[ Start ]---------------
     
     ## NOTE: by observing the data I saw there are no NA values, so I don't trap 
     ## for them in my code.
@@ -24,6 +23,9 @@ run <- function() {
     ## Looking at features.txt, I see that each variable name is also indexed 
     ## numerically. So I decided to use the numeric index to extract the -mean() and 
     ## -std() columns I wanted.
+    
+    ## [Step 2 ] Extract only the measurements on the mean and standard deviation 
+    ## for each measurement
     vecColumnNums <- 
         c(1, 2, 3, 4, 5, 6, 41, 42, 43, 44, 45, 46, 81, 82, 83, 84, 85, 
           86, 121, 122, 123, 124, 125, 126, 161, 162, 163, 164, 165, 166, 
@@ -36,7 +38,7 @@ run <- function() {
     
     ## Note: test_recs_slim is now a dataframe and no longer a matrix.
     
-    ## Union the two activity vectors, the two subject_id vectors; and the two slim, 
+    ## [ Step 1 ] Union the two activity vectors, the two subject_id vectors; and the two slim, 
     ## observation dataframes.
     all_activities  <- rbind(training_activity_recs, test_activity_recs)
     all_subject_ids <- rbind(training_subject_ids, test_subject_ids)
@@ -49,6 +51,8 @@ run <- function() {
     
     subject_ids           <- as.data.frame(all_subject_ids)
     colnames(subject_ids) <- c("subject_id")
+    
+    ## [ Step 4 ] Appropriately label the data set with descriptive variable names.
     
     ## Create a vector consisting of the variable names which are based on those obtained 
     ## from features.txt. These variable names correspond to the numbered columns listed 
@@ -92,8 +96,8 @@ run <- function() {
     ## Assign modified column names to the dataframe
     colnames(all_recs_slim) <- vColumnNames
     
-    ## Use descriptive activity names to name the activities in the data set 
-    ## (requirement 3): first convert all_activities to a dataframe so it can hold 
+    ## [ Step 3 ] Use descriptive activity names to name the activities in the  
+    ## data set. First convert all_activities to a dataframe so it can hold 
     ## another column called "activity_name". Then obtain the activity name from 
     ## activity_labels.txt using with(). 
     activity_labels = read.table("activity_labels.txt")
@@ -109,6 +113,9 @@ run <- function() {
     subjectIds_activityNames <- cbind(subject_ids, activities)
     all_data                 <- cbind(subjectIds_activityNames, all_recs_slim)
     
+    ## [ Step 5 ] Transform all_data using ddply to obtain the average or mean 
+    ## value for each measurement, for each group consisting of the Subject and 
+    ## Activity.
     tidy_dataset <-
         ddply(
             all_data,
@@ -182,7 +189,7 @@ run <- function() {
             freqBodyBodyGyroJerkMag_std_avg = mean(freqBodyBodyGyroJerkMag_std)
         )
     
-    write.csv( tidy_dataset, file = "tidy_dataset.txt", row.names = TRUE)
+    write.table( tidy_dataset, file="tidy_dataset.txt", row.name=FALSE )
     
     return(1)
 }

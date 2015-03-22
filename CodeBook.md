@@ -29,72 +29,72 @@ According to "features_info.txt" in the UCI HAR Dataset, here is a description o
 #### The Variables
 
 The output that is written to file at the conclusion of run_analysis.R is named "tidy_dataset.csv", and it consists of the average or mean of each variable of only those labeled as "-mean()" (mean value) or "-std()" (standard deviation) from the data provided in the UCI HAR Dataset (see "features.txt"), grouped by each subject and activity. These then are the variables output in "tidy_dataset.csv":
-<li>timeBodyAccel_mean_X_avg
-<li>timeBodyAccel_mean_Y_avg
-<li>timeBodyAccel_mean_Z_avg
-<li>timeBodyAccel_std_X_avg
-<li>timeBodyAccel_std_Y_avg
-<li>timeBodyAccel_std_Z_avg
-<li>timeGravityAccel_mean_X_avg
-<li>timeGravityAccel_mean_Y_avg
-<li>timeGravityAccel_mean_Z_avg
-<li>timeGravityAccel_std_X_avg
-<li>timeGravityAccel_std_Y_avg
-<li>timeGravityAccel_std_Z_avg
-<li>timeBodyAccelJerk_mean_X_avg
-<li>timeBodyAccelJerk_mean_Y_avg
-<li>timeBodyAccelJerk_mean_Z_avg
-<li>timeBodyAccelJerk_std_X_avg
-<li>timeBodyAccelJerk_std_Y_avg
-<li>timeBodyAccelJerk_std_Z_avg
-<li>timeBodyGyro_mean_X_avg
-<li>timeBodyGyro_mean_Y_avg
-<li>timeBodyGyro_mean_Z_avg
-<li>timeBodyGyro_std_X_avg
-<li>timeBodyGyro_std_Y_avg
-<li>timeBodyGyro_std_Z_avg
-<li>timeBodyGyroJerk_mean_X_avg
-<li>timeBodyGyroJerk_mean_Y_avg
-<li>timeBodyGyroJerk_mean_Z_avg
-<li>timeBodyGyroJerk_std_X_avg
-<li>timeBodyGyroJerk_std_Y_avg
-<li>timeBodyGyroJerk_std_Z_avg
-<li>timeBodyAccelMag_mean_avg
-<li>timeBodyAccelMag_std_avg
-<li>timeGravityAccelMag_mean_avg
-<li>timeGravityAccelMag_std_avg
-<li>timeBodyAccelJerkMag_mean_avg
-<li>timeBodyAccelJerkMag_std_avg
-<li>timeBodyGyroMag_mean_avg
-<li>timeBodyGyroMag_std_avg
-<li>timeBodyGyroJerkMag_mean_avg
-<li>timeBodyGyroJerkMag_std_avg
-<li>freqBodyAccel_mean_X_avg
-<li>freqBodyAccel_mean_Y_avg
-<li>freqBodyAccel_mean_Z_avg
-<li>freqBodyAccel_std_X_avg
-<li>freqBodyAccel_std_Y_avg
-<li>freqBodyAccel_std_Z_avg
-<li>freqBodyAccelJerk_mean_X_avg
-<li>freqBodyAccelJerk_mean_Y_avg
-<li>freqBodyAccelJerk_mean_Z_avg
-<li>freqBodyAccelJerk_std_X_avg
-<li>freqBodyAccelJerk_std_Y_avg
-<li>freqBodyAccelJerk_std_Z_avg
-<li>freqBodyGyro_mean_X_avg
-<li>freqBodyGyro_mean_Y_avg
-<li>freqBodyGyro_mean_Z_avg
-<li>freqBodyGyro_std_X_avg
-<li>freqBodyGyro_std_Y_avg
-<li>freqBodyGyro_std_Z_avg
-<li>freqBodyAccelMag_mean_avg
-<li>freqBodyAccelMag_std_avg
-<li>freqBodyBodyAccelJerkMag_mean_avg
-<li>freqBodyBodyAccelJerkMag_std_avg
-<li>freqBodyBodyGyroMag_mean_avg
-<li>freqBodyBodyGyroMag_std_avg
-<li>freqBodyBodyGyroJerkMag_mean_avg
-<li>freqBodyBodyGyroJerkMag_std
+ - timeBodyAccel_mean_X_avg
+ - timeBodyAccel_mean_Y_avg
+ - timeBodyAccel_mean_Z_avg
+ - timeBodyAccel_std_X_avg
+ - timeBodyAccel_std_Y_avg
+ - timeBodyAccel_std_Z_avg
+ - timeGravityAccel_mean_X_avg
+ - timeGravityAccel_mean_Y_avg
+ - timeGravityAccel_mean_Z_avg
+ - timeGravityAccel_std_X_avg
+ - timeGravityAccel_std_Y_avg
+ - timeGravityAccel_std_Z_avg
+ - timeBodyAccelJerk_mean_X_avg
+ - timeBodyAccelJerk_mean_Y_avg
+ - timeBodyAccelJerk_mean_Z_avg
+ - timeBodyAccelJerk_std_X_avg
+ - timeBodyAccelJerk_std_Y_avg
+ - timeBodyAccelJerk_std_Z_avg
+ - timeBodyGyro_mean_X_avg
+ - timeBodyGyro_mean_Y_avg
+ - timeBodyGyro_mean_Z_avg
+ - timeBodyGyro_std_X_avg
+ - timeBodyGyro_std_Y_avg
+ - timeBodyGyro_std_Z_avg
+ - timeBodyGyroJerk_mean_X_avg
+ - timeBodyGyroJerk_mean_Y_avg
+ - timeBodyGyroJerk_mean_Z_avg
+ - timeBodyGyroJerk_std_X_avg
+ - timeBodyGyroJerk_std_Y_avg
+ - timeBodyGyroJerk_std_Z_avg
+ - timeBodyAccelMag_mean_avg
+ - timeBodyAccelMag_std_avg
+ - timeGravityAccelMag_mean_avg
+ - timeGravityAccelMag_std_avg
+ - timeBodyAccelJerkMag_mean_avg
+ - timeBodyAccelJerkMag_std_avg
+ - timeBodyGyroMag_mean_avg
+ - timeBodyGyroMag_std_avg
+ - timeBodyGyroJerkMag_mean_avg
+ - timeBodyGyroJerkMag_std_avg
+ - freqBodyAccel_mean_X_avg
+ - freqBodyAccel_mean_Y_avg
+ - freqBodyAccel_mean_Z_avg
+ - freqBodyAccel_std_X_avg
+ - freqBodyAccel_std_Y_avg
+ - freqBodyAccel_std_Z_avg
+ - freqBodyAccelJerk_mean_X_avg
+ - freqBodyAccelJerk_mean_Y_avg
+ - freqBodyAccelJerk_mean_Z_avg
+ - freqBodyAccelJerk_std_X_avg
+ - freqBodyAccelJerk_std_Y_avg
+ - freqBodyAccelJerk_std_Z_avg
+ - freqBodyGyro_mean_X_avg
+ - freqBodyGyro_mean_Y_avg
+ - freqBodyGyro_mean_Z_avg
+ - freqBodyGyro_std_X_avg
+ - freqBodyGyro_std_Y_avg
+ - freqBodyGyro_std_Z_avg
+ - freqBodyAccelMag_mean_avg
+ - freqBodyAccelMag_std_avg
+ - freqBodyBodyAccelJerkMag_mean_avg
+ - freqBodyBodyAccelJerkMag_std_avg
+ - freqBodyBodyGyroMag_mean_avg
+ - freqBodyBodyGyroMag_std_avg
+ - freqBodyBodyGyroJerkMag_mean_avg
+ - freqBodyBodyGyroJerkMag_std
 
 I renamed these variables to be more readable and to remove illegal expressions when used in a plyr data transformation. The new variable names (listed above) represent 't-' and 'f-' as 'time-' and 'freq-', respectively; they have all parentheses removed; '-Acc-' is converted to 'Accel'; and all hyphens are converted to underscores. E.g.:
 
@@ -116,72 +116,72 @@ Here are the data transformation requirements for the Course Project:
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Since the Train and Test data sets are somewhat large, I decided that I would perform Step 2 before Step 1. Looking at features.txt, I saw that each variable name is also indexed numerically. So I decided to use the numeric index to extract the -mean() and -std() columns I wanted. Here are the columns:
-<li>tBodyAcc-mean()-X
-<li>tBodyAcc-mean()-Y
-<li>tBodyAcc-mean()-Z
-<li>tBodyAcc-std()-X
-<li>tBodyAcc-std()-Y
-<li>tBodyAcc-std()-Z
-<li>tGravityAcc-mean()-X
-<li>tGravityAcc-mean()-Y
-<li>tGravityAcc-mean()-Z
-<li>tGravityAcc-std()-X
-<li>tGravityAcc-std()-Y
-<li>tGravityAcc-std()-Z
-<li>tBodyAccJerk-mean()-X
-<li>tBodyAccJerk-mean()-Y
-<li>tBodyAccJerk-mean()-Z
-<li>tBodyAccJerk-std()-X
-<li>tBodyAccJerk-std()-Y
-<li>tBodyAccJerk-std()-Z
-<li>tBodyGyro-mean()-X
-<li>tBodyGyro-mean()-Y
-<li>tBodyGyro-mean()-Z
-<li>tBodyGyro-std()-X
-<li>tBodyGyro-std()-Y
-<li>tBodyGyro-std()-Z
-<li>tBodyGyroJerk-mean()-X
-<li>tBodyGyroJerk-mean()-Y
-<li>tBodyGyroJerk-mean()-Z
-<li>tBodyGyroJerk-std()-X
-<li>tBodyGyroJerk-std()-Y
-<li>tBodyGyroJerk-std()-Z
-<li>tBodyAccMag-mean()
-<li>tBodyAccMag-std()
-<li>tGravityAccMag-mean()
-<li>tGravityAccMag-std()
-<li>tBodyAccJerkMag-mean()
-<li>tBodyAccJerkMag-std()
-<li>tBodyGyroMag-mean()
-<li>tBodyGyroMag-std()
-<li>tBodyGyroJerkMag-mean()
-<li>tBodyGyroJerkMag-std()
-<li>fBodyAcc-mean()-X
-<li>fBodyAcc-mean()-Y
-<li>fBodyAcc-mean()-Z
-<li>fBodyAcc-std()-X
-<li>fBodyAcc-std()-Y
-<li>fBodyAcc-std()-Z
-<li>fBodyAccJerk-mean()-X
-<li>fBodyAccJerk-mean()-Y
-<li>fBodyAccJerk-mean()-Z
-<li>fBodyAccJerk-std()-X
-<li>fBodyAccJerk-std()-Y
-<li>fBodyAccJerk-std()-Z
-<li>fBodyGyro-mean()-X
-<li>fBodyGyro-mean()-Y
-<li>fBodyGyro-mean()-Z
-<li>fBodyGyro-std()-X
-<li>fBodyGyro-std()-Y
-<li>fBodyGyro-std()-Z
-<li>fBodyAccMag-mean()
-<li>fBodyAccMag-std()
-<li>fBodyBodyAccJerkMag-mean()
-<li>fBodyBodyAccJerkMag-std()
-<li>fBodyBodyGyroMag-mean()
-<li>fBodyBodyGyroMag-std()
-<li>fBodyBodyGyroJerkMag-mean()
-<li>fBodyBodyGyroJerkMag-std()
+ - tBodyAcc-mean()-X
+ - tBodyAcc-mean()-Y
+ - tBodyAcc-mean()-Z
+ - tBodyAcc-std()-X
+ - tBodyAcc-std()-Y
+ - tBodyAcc-std()-Z
+ - tGravityAcc-mean()-X
+ - tGravityAcc-mean()-Y
+ - tGravityAcc-mean()-Z
+ - tGravityAcc-std()-X
+ - tGravityAcc-std()-Y
+ - tGravityAcc-std()-Z
+ - tBodyAccJerk-mean()-X
+ - tBodyAccJerk-mean()-Y
+ - tBodyAccJerk-mean()-Z
+ - tBodyAccJerk-std()-X
+ - tBodyAccJerk-std()-Y
+ - tBodyAccJerk-std()-Z
+ - tBodyGyro-mean()-X
+ - tBodyGyro-mean()-Y
+ - tBodyGyro-mean()-Z
+ - tBodyGyro-std()-X
+ - tBodyGyro-std()-Y
+ - tBodyGyro-std()-Z
+ - tBodyGyroJerk-mean()-X
+ - tBodyGyroJerk-mean()-Y
+ - tBodyGyroJerk-mean()-Z
+ - tBodyGyroJerk-std()-X
+ - tBodyGyroJerk-std()-Y
+ - tBodyGyroJerk-std()-Z
+ - tBodyAccMag-mean()
+ - tBodyAccMag-std()
+ - tGravityAccMag-mean()
+ - tGravityAccMag-std()
+ - tBodyAccJerkMag-mean()
+ - tBodyAccJerkMag-std()
+ - tBodyGyroMag-mean()
+ - tBodyGyroMag-std()
+ - tBodyGyroJerkMag-mean()
+ - tBodyGyroJerkMag-std()
+ - fBodyAcc-mean()-X
+ - fBodyAcc-mean()-Y
+ - fBodyAcc-mean()-Z
+ - fBodyAcc-std()-X
+ - fBodyAcc-std()-Y
+ - fBodyAcc-std()-Z
+ - fBodyAccJerk-mean()-X
+ - fBodyAccJerk-mean()-Y
+ - fBodyAccJerk-mean()-Z
+ - fBodyAccJerk-std()-X
+ - fBodyAccJerk-std()-Y
+ - fBodyAccJerk-std()-Z
+ - fBodyGyro-mean()-X
+ - fBodyGyro-mean()-Y
+ - fBodyGyro-mean()-Z
+ - fBodyGyro-std()-X
+ - fBodyGyro-std()-Y
+ - fBodyGyro-std()-Z
+ - fBodyAccMag-mean()
+ - fBodyAccMag-std()
+ - fBodyBodyAccJerkMag-mean()
+ - fBodyBodyAccJerkMag-std()
+ - fBodyBodyGyroMag-mean()
+ - fBodyBodyGyroMag-std()
+ - fBodyBodyGyroJerkMag-mean()
+ - fBodyBodyGyroJerkMag-std()
 
 Once I had extracted these variables from both the Train and Test files, I unioned them together to form a single, large data set of observation data. This fulfills Steps 1 and 2.
 
